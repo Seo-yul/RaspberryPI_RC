@@ -1,1 +1,20 @@
-# bongjafeed
+# RaspberryPI_RC
+using RaspberryPI, EC2, KAKAO API, aws lambda, aws IoT
+
+본 소스코드는 네오플에서 서비스하는 던전앤파이터 API 와 메신저 카카오 챗봇 API를 이용한 코드입니다.
+</br> 
+***
+<b>1. 프로그램 작동순서</b>
+<pre> 
+KAKAO 플러스친구 메시지 -> EC2 -> request, response -> 카카오 서버
+lambda 를 통해 request 메시지 트리거로 해당 메서드가 실행됨
+RaspberryPI 는 항상 aws Iot의 메시지 수신 대기상태.
+</pre>
+
+
+<b>2. 작성자</b>
+<pre> 
+seoyul yoon
+                20. 11. 2017
+</pre>
+***
